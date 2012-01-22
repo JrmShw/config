@@ -1,8 +1,10 @@
-"1.0b7.2 "(created 2011/08/05 11:03:59)"
+"1.0rc1
 
 loadplugins '\.(js|penta)$'
 group user
-map -modes=n,v <C-c> -builtin <count>Y
+map -count -modes=n,v e -builtin <count>k
+map -count -modes=n,v k -builtin <count>n
+map -count -modes=n,v n -builtin <count>j
 set guioptions=bBmNrsT
 
 " vim: set ft=pentadactyl:

@@ -2,9 +2,41 @@
 
 loadplugins '\.(js|penta)$'
 group user
+map -count -modes=n,v ; -builtin <count>p
+map -count -modes=n,v : -builtin <count>P
+map -count -modes=n,v d -builtin <count>g
+map -count -modes=n,v D -builtin <count>G
+map -count -modes=n,v dd -builtin <count>gg
 map -count -modes=n,v e -builtin <count>k
+map -count -modes=n,v E -builtin <count>K
+map -count -modes=n,v f -builtin <count>e
+map -count -modes=n,v F -builtin <count>E
+map -count -modes=n,v g -builtin <count>t
+map -count -modes=n,v G -builtin <count>T
+map -count -modes=n,v i -builtin <count>l
+map -count -modes=n,v I -builtin <count>L
+map -count -modes=n,v j -builtin <count>y
+map -count -modes=n,v J -builtin <count>Y
 map -count -modes=n,v k -builtin <count>n
+map -count -modes=n,v l -builtin <count>u
+map -count -modes=n,v L -builtin <count>U
 map -count -modes=n,v n -builtin <count>j
+map -count -modes=n,v N -builtin <count>J
+map -count -modes=n,v o -builtin <count>;
+map -count -modes=n,v O -builtin <count>:
+map -count -modes=n,v p -builtin <count>r
+map -count -modes=n,v P -builtin <count>R
+map -count -modes=n,v r -builtin <count>s
+map -count -modes=n,v R -builtin <count>S
+map -count -modes=n,v s -builtin <count>d
+map -count -modes=n,v S -builtin <count>D
+map -count -modes=n,v t -builtin <count>f
+map -count -modes=n,v T -builtin <count>F
+map -count -modes=n,v u -builtin <count>i
+map -count -modes=n,v U -builtin <count>I
+map -count -modes=n,v y -builtin <count>o
+map -count -modes=n,v Y -builtin <count>O
+map -count -modes=n,v K -builtin <count>N
 set guioptions=bBmNrsT
 
 " vim: set ft=pentadactyl:

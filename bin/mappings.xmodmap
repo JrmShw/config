@@ -1,13 +1,19 @@
+! no need to remove lock if the layout is Colemak
+remove control = Control_L
+
 ! keycode 37 = left Ctrl key
-remove Control = Control_L
 keycode 37 = Caps_Lock
+add lock = Caps_Lock
 
 ! keycode 66 = Caps Lock key
-! no need to remove Lock if the layout is Colemak
+! the second Control_L is needed so that
+!   Shift + Ctrl works the same as Ctrl + Shift
 keycode 66 = Control_L Control_L
-add Control = Control_L
+add control = Control_L
 
-! keycode 105 = right Ctrl key, keysym 'Menu' opens the context menu
+
+! keycode 105 = right Ctrl key
+! keysym 'Menu' opens the context menu
 ! removing Control is especially important if "sticky keys" is enabled
-remove Control = Control_R
+remove control = Control_R
 keycode 105 = Menu

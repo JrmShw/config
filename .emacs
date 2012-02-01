@@ -1,3 +1,18 @@
+;;; org-mode settings
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+
+;; key bindings for Org commands
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+
+
+;;; inhibit the startup screen so that it doesn't split the window when only
+;;; one file is opened
+(setq inhibit-startup-screen t)
+
+
 ;;; change default file backup behavior
 (setq
    backup-by-copying t      ; don't clobber symlinks

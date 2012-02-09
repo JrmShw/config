@@ -39,6 +39,7 @@ map -count -modes=caret,n,o,t,v U -builtin <count>I
 map -count -modes=caret,n,o,t,v y -builtin <count>o
 map -count -modes=caret,n,o,t,v Y -builtin <count>O
 map -count -modes=caret,n,o,t,v dG -builtin <count>gT
+map -count -modes=n,v gd -builtin <count>gT
 set guioptions=bBmNrsT
 
 " vim: set ft=pentadactyl:

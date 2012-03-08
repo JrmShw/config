@@ -2,4 +2,4 @@
 	name = Jrm Shw
 	email = jrmshw@gmail.com
 [core]
-	editor = emacs -nw
+	editor = vim

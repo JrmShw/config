@@ -20,16 +20,17 @@ keycode 105 = Menu
 
 ! the following assumes a Colemak keyboard layout
 ! remap AltGr + [n,e,i,o] keys from:
-!   "ntilde Ntilde" to "Down Down"
-!   "eacute Eacute" to "Up Up"
-!   "iacute Iacute" to "Left Left"
-!   "oacute Oacute" to "Right Right"
-! diacritics can be placed above letters by using AltGr + [`,r,t], so remapping [ñ,é,í,ó] does not remove functionality
-! rationale for key placement:
-!   <Down> and <Up> will be most used because of menus, so they should be under the two strongest fingers
-!     mapping Down under n and Up under e retains consistency with my vi bindings
-!   <Left> and <Right> deserve to be more easily accessible than my vi bindings
-keycode  44 = n N n N Down Down
+!   "dead_caron asciitilde" to "Home Home"
+!   "ntilde Ntilde"         to "Down Down"
+!   "eacute Eacute"         to "Up Up"
+!   "iacute Iacute"         to "Left Left"
+!   "oacute Oacute"         to "Right Right"
+!   "otilde Otilde"         to "End End"
+! diacritics can be placed above letters by using AltGr + [`,r,t], so remapping [ñ,é,í,ó,õ] does not remove functionality
+! remapping AltGr+h does remove functionality, though: it's used for carons
+keycode  43 = h H h H Home Home
+keycode  44 = n N n N Left Left
 keycode  45 = e E e E Up Up
-keycode  46 = i I i I Left Left
+keycode  46 = i I i I Down Down
 keycode  47 = o O o O Right Right
+keycode  48 = apostrophe quotedbl apostrophe quotedbl End End
